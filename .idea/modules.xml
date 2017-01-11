@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GetStartRxJava2.0.iml" filepath="$PROJECT_DIR$/GetStartRxJava2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/observerdownload/observerdownload.iml" filepath="$PROJECT_DIR$/observerdownload/observerdownload.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjava2demo/rxjava2demo.iml" filepath="$PROJECT_DIR$/rxjava2demo/rxjava2demo.iml" />
     </modules>
   </component>
