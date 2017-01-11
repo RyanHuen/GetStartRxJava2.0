@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.chaozhuo.observerdownload.R;
 import com.chaozhuo.observerdownload.observer.base.Observer;
@@ -16,8 +14,6 @@ import com.chaozhuo.observerdownload.observer.impl.DownLoadingComponent;
 
 public class MainActivity extends AppCompatActivity implements Observer, View.OnClickListener {
 
-    private ImageView mImageInLayoutItem;
-    private TextView mTitleInLayoutItem;
     private ProgressBar mProgressInLayoutItem;
     private Button mButtonToDialog;
     private Button mButtonDownloadStart;
@@ -30,8 +26,6 @@ public class MainActivity extends AppCompatActivity implements Observer, View.On
     }
 
     private void initView() {
-        mImageInLayoutItem = (ImageView) findViewById(R.id.image_in_layout_item);
-        mTitleInLayoutItem = (TextView) findViewById(R.id.title_in_layout_item);
         mProgressInLayoutItem = (ProgressBar) findViewById(R.id.progress_in_layout_item);
         mButtonToDialog = (Button) findViewById(R.id.button_to_dialog);
         mButtonDownloadStart = (Button) findViewById(R.id.button_download_start);
