@@ -56,13 +56,13 @@
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Detail" />
+        android:text="查看细节" />
 
     <Button
         android:id="@+id/button_download_start"
         style="@android:style/Widget.Material.Button.Inset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Download" />
+        android:text="开始下载" />
 
 </LinearLayout>
