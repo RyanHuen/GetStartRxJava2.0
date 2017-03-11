@@ -11,6 +11,7 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
+import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 public class DisposeInProcessActivity extends AppCompatActivity {
@@ -47,6 +48,8 @@ public class DisposeInProcessActivity extends AppCompatActivity {
             @Override
             public void onSubscribe(Disposable d) {
                 mDisposable = d;
+                CompositeDisposable compositeDisposable=new CompositeDisposable();
+                compositeDisposable.add(d);
 
             }
 

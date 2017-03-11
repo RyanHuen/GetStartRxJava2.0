@@ -42,6 +42,7 @@ public class BaseImplActivity extends AppCompatActivity {
 
         // 创建一个下游Observer（观察者）
         Observer<String> observer = new Observer<String>() {
+
             @Override
             public void onSubscribe(Disposable d) {
                 Log.d(TAG, "onSubscribe: ");

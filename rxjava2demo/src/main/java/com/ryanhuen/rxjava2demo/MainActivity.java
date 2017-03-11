@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.ryanhuen.Person;
 import com.ryanhuen.rxjava2demo.base.BaseImplActivity;
 import com.ryanhuen.rxjava2demo.base.DisposeInProcessActivity;
 import com.ryanhuen.rxjava2demo.base.JustEmitterActivity;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        System.out.println(Person.INSTANCE.toString());
     }
 
     private void initView() {

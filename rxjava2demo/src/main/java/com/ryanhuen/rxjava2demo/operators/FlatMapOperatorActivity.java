@@ -43,12 +43,12 @@ public class FlatMapOperatorActivity extends AppCompatActivity {
             public ObservableSource<String> apply(String string) throws Exception {
                 final List<String> list = new ArrayList<String>();
                 for (int i = 0; i < 3; i++) {
-                    list.add("我经过了变换:" + string);
+                    list.add("我经过了变换:" + string+i);
                 }
                 return Observable.fromIterable(list)/*
                                                      * 后续代码加入了delay功能，
                                                      * 标示发送事件延迟10毫秒
-                                                     */.delay(10, TimeUnit.MILLISECONDS);
+                                                     */.delay(1000, TimeUnit.MILLISECONDS);
             }
 
         }).subscribe(new Consumer<String>() {

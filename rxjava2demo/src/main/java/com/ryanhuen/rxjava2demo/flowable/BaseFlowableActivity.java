@@ -35,7 +35,7 @@ public class BaseFlowableActivity extends AppCompatActivity {
                 e.onNext("事件4");
                 e.onComplete();
             }
-        }, BackpressureStrategy.ERROR);
+        }, BackpressureStrategy.BUFFER);
 
         Subscriber<String> subscriber = new Subscriber<String>() {
             @Override
