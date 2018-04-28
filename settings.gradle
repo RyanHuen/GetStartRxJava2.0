@@ -1,1 +1,1 @@
-include ':rxjava2demo', ':observerdownload', ':rxbusdownload', ':rxandroid'
+include ':rxjava2demo', ':observerdownload', ':rxbusdownload'

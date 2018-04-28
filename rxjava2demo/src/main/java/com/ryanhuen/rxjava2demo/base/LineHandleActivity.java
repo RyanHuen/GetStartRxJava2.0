@@ -1,11 +1,12 @@
 
 package com.ryanhuen.rxjava2demo.base;
 
+import com.ryanhuen.rxjava2demo.R;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-
-import com.ryanhuen.rxjava2demo.R;
+import android.view.View;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -13,7 +14,7 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
-public class LineHandleActivity extends AppCompatActivity {
+public class LineHandleActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String TAG = LineHandleActivity.class.getName();
 
     @Override
@@ -24,6 +25,7 @@ public class LineHandleActivity extends AppCompatActivity {
     }
 
     private void doRxJavaWork() {
+        // 单一创建
         Observable.create(new ObservableOnSubscribe<String>() {
             @Override
             public void subscribe(ObservableEmitter<String> e/* 事件发射器 */) throws Exception {
@@ -61,6 +63,33 @@ public class LineHandleActivity extends AppCompatActivity {
             }
         });
 
+        // 逐一发射
+        Observable.just("事件1", "事件2")
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Log.d(TAG, "onSubscribe: ");
+                    }
+
+                    @Override
+                    public void onNext(String string) {
+                        Log.d(TAG, "下游onNext: " + string);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.d(TAG, "下游onError: " + e.getMessage());
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.d(TAG, "下游onComplete: ");
+                    }
+                });
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }

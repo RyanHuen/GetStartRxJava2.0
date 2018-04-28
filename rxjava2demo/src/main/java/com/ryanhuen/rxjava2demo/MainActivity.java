@@ -1,15 +1,10 @@
 
 package com.ryanhuen.rxjava2demo;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-
 import com.ryanhuen.Person;
 import com.ryanhuen.rxjava2demo.base.BaseImplActivity;
 import com.ryanhuen.rxjava2demo.base.DisposeInProcessActivity;
+import com.ryanhuen.rxjava2demo.base.IterableEmitterActivity;
 import com.ryanhuen.rxjava2demo.base.JustEmitterActivity;
 import com.ryanhuen.rxjava2demo.base.LineHandleActivity;
 import com.ryanhuen.rxjava2demo.flowable.BaseFlowableActivity;
@@ -22,6 +17,12 @@ import com.ryanhuen.rxjava2demo.thread_control.ChangeThreadActivity;
 import com.ryanhuen.rxjava2demo.thread_control.DefaultThreadActivity;
 import com.ryanhuen.rxjava2demo.thread_control.MultiThreadChangeActivity;
 import com.ryanhuen.rxjava2demo.usebus.UseBusActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         disposeInProcess.setOnClickListener(this);
         Button justEmitter = (Button) findViewById(R.id.just_emitter);
         justEmitter.setOnClickListener(this);
+        Button fromIterableEmitter = (Button) findViewById(R.id.from_iterable_emitter);
+        fromIterableEmitter.setOnClickListener(this);
         Button defaultThread = (Button) findViewById(R.id.default_thread);
         defaultThread.setOnClickListener(this);
         Button changeThread = (Button) findViewById(R.id.change_thread);
@@ -82,6 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             /** 使用just方式发射事件 */
             case R.id.just_emitter:
                 startActivity(new Intent(this, JustEmitterActivity.class));
+                break;
+            case R.id.from_iterable_emitter:
+                startActivity(new Intent(this, IterableEmitterActivity.class));
                 break;
             /** 不指定线程（默认线程） */
             case R.id.default_thread:

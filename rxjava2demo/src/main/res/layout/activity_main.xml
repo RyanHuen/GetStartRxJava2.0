@@ -23,10 +23,16 @@
             android:text="基本实现" />
 
         <Button
-            android:id="@+id/line_handle"
+            android:id="@+id/just_emitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="链式调用" />
+            android:text="just关键字发射" />
+
+        <Button
+            android:id="@+id/from_iterable_emitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FromIterable关键字发射" />
 
         <Button
             android:id="@+id/dispose_in_process"
@@ -35,10 +41,10 @@
             android:text="中途切断" />
 
         <Button
-            android:id="@+id/just_emitter"
+            android:id="@+id/line_handle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="just关键字发射" />
+            android:text="链式调用" />
 
         <View
             android:layout_width="match_parent"

@@ -15,20 +15,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ryanhuen.rxjava2demo.base.BaseImplActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.base.LineHandleActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.base.DisposeInProcessActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.base.JustEmitterActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.thread_control.DefaultThreadActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.thread_control.ChangeThreadActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.thread_control.MultiThreadChangeActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.operators.MapOperatorActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.operators.FlatMapOperatorActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.operators.ConcatMapOperatorActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.operators.ZipOperatorActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.flowable.UnlimitPostActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.flowable.BaseFlowableActivity" />
-        <activity android:name="com.ryanhuen.rxjava2demo.usebus.UseBusActivity" />
+        <activity android:name=".base.BaseImplActivity" />
+        <activity android:name=".base.LineHandleActivity" />
+        <activity android:name=".base.DisposeInProcessActivity" />
+        <activity android:name=".base.JustEmitterActivity" />
+        <activity android:name=".thread_control.DefaultThreadActivity" />
+        <activity android:name=".thread_control.ChangeThreadActivity" />
+        <activity android:name=".thread_control.MultiThreadChangeActivity" />
+        <activity android:name=".operators.MapOperatorActivity" />
+        <activity android:name=".operators.FlatMapOperatorActivity" />
+        <activity android:name=".operators.ConcatMapOperatorActivity" />
+        <activity android:name=".operators.ZipOperatorActivity" />
+        <activity android:name=".flowable.UnlimitPostActivity" />
+        <activity android:name=".flowable.BaseFlowableActivity" />
+        <activity android:name=".usebus.UseBusActivity" />
+        <activity android:name=".base.IterableEmitterActivity" />
+        <activity android:name=".base.DisposeContainerActivity"></activity>
     </application>
 
 </manifest>

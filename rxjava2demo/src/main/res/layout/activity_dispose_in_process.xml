@@ -4,8 +4,20 @@
     android:id="@+id/activity_dispose_in_process"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.ryanhuen.rxjava2demo.base.DisposeInProcessActivity">
 
+    <Button
+        android:id="@+id/rock_and_launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动" />
+
+    <TextView
+        android:id="@+id/console_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:textSize="18sp" />
 </LinearLayout>

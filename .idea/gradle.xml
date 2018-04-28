@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/observerdownload" />
+            <option value="$PROJECT_DIR$/rxbusdownload" />
             <option value="$PROJECT_DIR$/rxjava2demo" />
           </set>
         </option>
